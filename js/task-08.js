@@ -11,6 +11,7 @@ function createFormObj (event) {
   if (email.value === "" || password.value === "" ) {
     const message = "Alert! All the fields should be filled."
     alert(message);
+    return;
   }
   const formObj = {
     email: email.value,
