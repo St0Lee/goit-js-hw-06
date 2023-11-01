@@ -6,7 +6,7 @@ formInfo.addEventListener("submit", createFormObj)
 function createFormObj (event) {
   
 
-  event.preventDefault();
+  event.preventDefault(); //disables default features
   const  {email, password} = event.currentTarget.elements;
   if (email.value === "" || password.value === "" ) {
     const message = "Alert! All the fields should be filled."
